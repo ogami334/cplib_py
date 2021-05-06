@@ -13,6 +13,7 @@ def main():
     def MI(): return map(int, input().split())
     def LI(): return list(map(int, input().split()))
     def SI(): return input().rstrip()
+    def FMI(): return map(float,input().split())#64bit 
     def FLI(): return list(map(float,input().split()))#64bit 
     def printns(x): print('\n'.join(x))
     inf = 10**17
