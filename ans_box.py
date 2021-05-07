@@ -2,6 +2,8 @@ def main():
     import sys
     input = sys.stdin.readline
     sys.setrecursionlimit(10**7)
+    from decimal import Decimal
+    import decimal
     from collections import Counter, deque
     from collections import defaultdict
     from itertools import combinations,permutations, groupby, product,accumulate
@@ -15,6 +17,7 @@ def main():
     def SI(): return input().rstrip()
     def FMI(): return map(float,input().split())#64bit 
     def FLI(): return list(map(float,input().split()))#64bit 
+    def DECMI(): return map(Decimal, input().split())
     def printns(x): print('\n'.join(x))
     inf = 10**17
     mod = 10**9 + 7
