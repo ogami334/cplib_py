@@ -24,6 +24,16 @@ def main():
     mod = 10**9 + 7
     #mod =998244353
 #main code here!
+    X,Y,R = DECMI()
+    xmax = floor(X+R)
+    xmin = ceil(X-R)
+    ans = 0
+    for x in range(xmin,xmax+1):
+        ywidth = (R**2 - (x-X)**2).sqrt()
+        ymax_tmp = floor(Y + ywidth)
+        ymin_tmp = ceil(Y - ywidth)
+        ans += ymax_tmp - ymin_tmp + 1
+    print(ans)
 
 if __name__=="__main__":
     main()
