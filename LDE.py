@@ -31,3 +31,7 @@ class LDE:
         self.x +=(m-self.m)*self.b
         self.y -=(m-self.m)*self.a
         self.m = m
+    def pos_update(self):# to return the minimum pair value
+        self.m_update(self.m + min(self.x//(-self.b),(self.y//self.a)))
+        #a>0,b<0の時にx>=0,y>=0となるような最小のx,yの組を返す関数
+        #自作
